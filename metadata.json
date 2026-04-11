@@ -1,0 +1,7 @@
+{
+  "name": "Remix: e-Mitra Portal - 300+ Online PDF, Image, Text \u0026 AI Tools",
+  "description": "Free online tools for PDF merging, compression, conversion, image resizing, OCR, AI text generation, and Indian government forms (Aadhaar, PAN, Ration Card). Fast, secure, and easy to use.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

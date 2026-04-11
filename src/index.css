@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+body {
+  @apply antialiased text-slate-900 bg-slate-50;
+}
+
+/* Custom scrollbar for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
+
+@theme {
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --color-on-surface-variant: #424752;
+  --color-secondary-fixed-dim: #66df75;
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-inverse-primary: #acc7ff;
+  --color-surface-variant: #e1e3e4;
+  --color-surface-container-low: #f3f4f5;
+  --color-on-primary: #ffffff;
+  --color-on-secondary-fixed: #002106;
+  --color-on-primary-fixed: #001a40;
+  --color-secondary-container: #80f98b;
+  --color-on-surface: #191c1d;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary-fixed: #d7e2ff;
+  --color-primary: #003f87;
+  --color-on-tertiary-container: #ffc2a7;
+  --color-tertiary-container: #983c00;
+  --color-surface: #f8f9fa;
+  --color-surface-container: #edeeef;
+  --color-on-tertiary-fixed: #351000;
+  --color-on-primary-container: #bbd0ff;
+  --color-secondary: #006e25;
+  --color-inverse-surface: #2e3132;
+  --color-surface-container-highest: #e1e3e4;
+  --color-surface-tint: #115cb9;
+  --color-tertiary: #722b00;
+  --color-on-secondary-fixed-variant: #00531a;
+  --color-on-secondary-container: #007327;
+  --color-on-tertiary: #ffffff;
+  --color-primary-container: #0056b3;
+  --color-on-tertiary-fixed-variant: #7b2f00;
+  --color-outline: #727784;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-surface-dim: #d9dadb;
+  --color-error: #ba1a1a;
+  --color-surface-bright: #f8f9fa;
+  --color-on-primary-fixed-variant: #004491;
+  --color-tertiary-fixed: #ffdbcc;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-high: #e7e8e9;
+  --color-outline-variant: #c2c6d4;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed-dim: #acc7ff;
+  --color-tertiary-fixed-dim: #ffb694;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-secondary-fixed: #83fc8e;
+
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed;
+  }
+}
+
+.glass-nav {
+  backdrop-filter: blur(16px);
+}
+
+.action-arc {
+  clip-path: circle(70% at 90% 50%);
+}
+
+/* Markdown styles for ChatBot */
+.markdown-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.markdown-content strong {
+  font-weight: 700;
+  color: inherit;
+}
