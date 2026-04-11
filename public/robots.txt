@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: https://ais-dev-ogmgl4k2s364c3py4dovwf-177445194387.asia-southeast1.run.app/sitemap.xml
+Sitemap: https://jansoochna.vercel.app/sitemap.xml

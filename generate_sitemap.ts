@@ -1,7 +1,7 @@
 import { toolSEOContent } from './src/data/toolSEOContent.ts';
 import fs from 'fs';
 
-const baseUrl = 'https://ais-dev-ogmgl4k2s364c3py4dovwf-177445194387.asia-southeast1.run.app';
+const baseUrl = 'https://jansoochna.vercel.app';
 const lastMod = new Date().toISOString().split('T')[0];
 
 const pages = [
