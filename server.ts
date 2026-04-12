@@ -11,13 +11,12 @@ async function startServer() {
   const app = express();
   const PORT = 3000;
 
-  // API routes can go here if needed
+  // API routes
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok" });
   });
 
   // Handle .html redirects/rewrites for backward compatibility
-  // Move this BEFORE static/vite middleware to ensure redirects happen first
   app.use((req, res, next) => {
     if (req.path.endsWith('.html') && req.path !== '/index.html') {
       const newPath = req.path.slice(0, -5);
@@ -26,42 +25,37 @@ async function startServer() {
     next();
   });
 
-  let vite: any;
+  // SPA Rewrite: For GET requests that accept HTML and don't have a file extension,
+  // rewrite the URL to /index.html so that Vite or the static server handles it as an SPA.
+  app.use((req, res, next) => {
+    if (
+      req.method === 'GET' && 
+      req.headers.accept?.includes('text/html') && 
+      !req.path.includes('.') &&
+      !req.path.startsWith('/api/')
+    ) {
+      req.url = '/index.html';
+    }
+    next();
+  });
+
   if (process.env.NODE_ENV !== "production") {
-    vite = await createViteServer({
+    // Development mode: Use Vite middleware with SPA fallback
+    const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: "custom",
+      appType: "spa", // This handles SPA fallback automatically in dev
     });
     app.use(vite.middlewares);
   } else {
+    // Production mode: Serve static files and fallback to index.html
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
+    
+    // SPA Fallback for production
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(distPath, 'index.html'));
+    });
   }
-
-  // SPA Fallback
-  app.use('*', async (req, res, next) => {
-    const url = req.originalUrl;
-
-    try {
-      if (process.env.NODE_ENV !== "production") {
-        // Dev mode fallback
-        let template = fs.readFileSync(
-          path.resolve(process.cwd(), 'index.html'),
-          'utf-8'
-        );
-        template = await vite.transformIndexHtml(url, template);
-        res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
-      } else {
-        // Production mode fallback
-        res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
-      }
-    } catch (e) {
-      if (process.env.NODE_ENV !== "production") {
-        vite.ssrFixStacktrace(e as Error);
-      }
-      next(e);
-    }
-  });
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on http://localhost:${PORT}`);
