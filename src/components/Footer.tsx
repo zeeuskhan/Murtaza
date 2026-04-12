@@ -1,6 +1,7 @@
 import React from 'react';
 import { Globe, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -40,11 +41,11 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-lg font-bold mb-6 text-indigo-400">{t('footer.quickLinks')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.home')}</a></li>
-            <li><a href="/services" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.services')}</a></li>
-            <li><a href="/forms" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.forms')}</a></li>
-            <li><a href="/jobs" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.jobs')}</a></li>
-            <li><a href="/contact" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.contact')}</a></li>
+            <li><Link to="/" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.home')}</Link></li>
+            <li><Link to="/services" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.services')}</Link></li>
+            <li><Link to="/forms" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.forms')}</Link></li>
+            <li><Link to="/jobs" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.jobs')}</Link></li>
+            <li><Link to="/contact" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.contact')}</Link></li>
           </ul>
         </div>
 
@@ -52,11 +53,11 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-lg font-bold mb-6 text-indigo-400">{t('nav.tools')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/tools" className="hover:text-white hover:translate-x-1 transition-all inline-block">All Tools</a></li>
-            <li><a href="/tools?category=pdf" className="hover:text-white hover:translate-x-1 transition-all inline-block">PDF Tools</a></li>
-            <li><a href="/tools?category=image" className="hover:text-white hover:translate-x-1 transition-all inline-block">Image Tools</a></li>
-            <li><a href="/tools?category=ai" className="hover:text-white hover:translate-x-1 transition-all inline-block">AI Tools</a></li>
-            <li><a href="/tools?category=text" className="hover:text-white hover:translate-x-1 transition-all inline-block">Text Tools</a></li>
+            <li><Link to="/tools" className="hover:text-white hover:translate-x-1 transition-all inline-block">All Tools</Link></li>
+            <li><Link to="/tools?category=pdf" className="hover:text-white hover:translate-x-1 transition-all inline-block">PDF Tools</Link></li>
+            <li><Link to="/tools?category=image" className="hover:text-white hover:translate-x-1 transition-all inline-block">Image Tools</Link></li>
+            <li><Link to="/tools?category=ai" className="hover:text-white hover:translate-x-1 transition-all inline-block">AI Tools</Link></li>
+            <li><Link to="/tools?category=text" className="hover:text-white hover:translate-x-1 transition-all inline-block">Text Tools</Link></li>
           </ul>
         </div>
 
@@ -99,7 +100,7 @@ const Footer: React.FC = () => {
             "Password Meter", "CC Validator", "IBAN Validator",
             "Aadhaar Download", "PAN Card Apply", "Ration Card", "Voter ID", "Birth Certificate", "Death Certificate", "Income Certificate", "Caste Certificate", "Domicile Certificate", "Jan Aadhaar", "SSO ID Login", "PM Surya Ghar", "Kusum Yojana", "NFSA Form"
           ].map((k, i) => (
-            <a key={i} href={`/tools?q=${k.toLowerCase().replace(/\s+/g, '+')}`} className="hover:text-indigo-400 transition-colors uppercase tracking-widest">{k}</a>
+            <Link key={i} to={`/tools?q=${k.toLowerCase().replace(/\s+/g, '+')}`} className="hover:text-indigo-400 transition-colors uppercase tracking-widest">{k}</Link>
           ))}
         </div>
         <p>{t('footer.rights')}</p>

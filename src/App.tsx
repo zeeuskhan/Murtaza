@@ -38,11 +38,12 @@ const GuidePage = lazy(() => import('./pages/GuidePage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage'));
 const JobsPage = lazy(() => import('./pages/JobsPage'));
 
-function App() {
-  const pathname = window.location.pathname;
-  const hash = window.location.hash;
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
-  // Scroll to top or to hash element
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
+  
   useEffect(() => {
     if (hash) {
       const element = document.getElementById(hash.substring(1));
@@ -53,72 +54,74 @@ function App() {
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
+  
+  return null;
+};
 
-  let content;
-  const isPath = (name: string) => 
-    pathname === `/${name}` || 
-    pathname.endsWith(`/${name}`) ||
-    pathname.includes(`${name}.html`) || 
-    pathname.endsWith(`/${name}.html`);
+// Tool ID extractor for legacy .html paths
+const ToolRouteWrapper = ({ Component }: { Component: React.FC<{ toolId: string | undefined }> }) => {
+  const { pathname } = useLocation();
+  const parts = pathname.split('/').filter(Boolean);
+  const toolId = parts[parts.length - 1]?.replace('.html', '');
+  return <Component toolId={toolId} />;
+};
 
-  if (isPath('services')) {
-    content = <ServicesPage />;
-  } else if (isPath('forms')) {
-    content = <FormsSection />;
-  } else if (isPath('contact')) {
-    content = <ContactPage />;
-  } else if (isPath('tools')) {
-    content = <ToolsPage />;
-  } else if (isPath('jobs')) {
-    content = <JobsPage />;
-  } else if (pathname.includes('/tools/')) {
-    const parts = pathname.split('/').filter(Boolean);
-    const toolId = parts[parts.length - 1]?.replace('.html', '');
-    content = <ToolPage toolId={toolId} />;
-  } else if (pathname.includes('/guides/')) {
-    const parts = pathname.split('/').filter(Boolean);
-    const toolId = parts[parts.length - 1]?.replace('.html', '');
-    content = <GuidePage toolId={toolId} />;
-  } else if (isPath('pdf-tools')) {
-    content = <CategoryPage category="pdf" />;
-  } else if (isPath('image-tools')) {
-    content = <CategoryPage category="image" />;
-  } else if (isPath('text-tools')) {
-    content = <CategoryPage category="text" />;
-  } else if (isPath('converter-tools')) {
-    content = <CategoryPage category="converter" />;
-  } else if (isPath('utility-tools')) {
-    content = <CategoryPage category="utility" />;
-  } else if (isPath('ai-tools')) {
-    content = <CategoryPage category="ai" />;
-  } else if (isPath('social-tools')) {
-    content = <CategoryPage category="social" />;
-  } else if (isPath('security-tools')) {
-    content = <CategoryPage category="security" />;
-  } else if (pathname.includes('-tool.html')) {
-    const toolId = pathname.split('/').pop()?.replace('-tool.html', '');
-    content = <ToolSEOPage toolId={toolId} />;
-  } else {
-    content = <Home />;
-  }
-
+function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50">
-      <BusinessSchema />
-      <Header />
-      <main className="flex-grow">
-        <Suspense fallback={
-          <div className="flex flex-col items-center justify-center min-h-[60vh]">
-            <Loader2 className="animate-spin text-indigo-600 mb-4" size={48} />
-            <p className="text-slate-500 font-medium text-lg">Loading...</p>
-          </div>
-        }>
-          {content}
-        </Suspense>
-      </main>
-      <ChatBot />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col bg-slate-50">
+        <BusinessSchema />
+        <Header />
+        <main className="flex-grow">
+          <Suspense fallback={
+            <div className="flex flex-col items-center justify-center min-h-[60vh]">
+              <Loader2 className="animate-spin text-indigo-600 mb-4" size={48} />
+              <p className="text-slate-500 font-medium text-lg">Loading...</p>
+            </div>
+          }>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/index.html" element={<Navigate to="/" replace />} />
+              
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services.html" element={<Navigate to="/services" replace />} />
+              
+              <Route path="/forms" element={<FormsSection />} />
+              <Route path="/forms.html" element={<Navigate to="/forms" replace />} />
+              
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/contact.html" element={<Navigate to="/contact" replace />} />
+              
+              <Route path="/tools" element={<ToolsPage />} />
+              <Route path="/tools.html" element={<Navigate to="/tools" replace />} />
+              
+              <Route path="/jobs" element={<JobsPage />} />
+              <Route path="/jobs.html" element={<Navigate to="/jobs" replace />} />
+              
+              <Route path="/tools/:id" element={<ToolRouteWrapper Component={ToolPage} />} />
+              <Route path="/guides/:id" element={<ToolRouteWrapper Component={GuidePage} />} />
+              
+              <Route path="/pdf-tools" element={<CategoryPage category="pdf" />} />
+              <Route path="/image-tools" element={<CategoryPage category="image" />} />
+              <Route path="/text-tools" element={<CategoryPage category="text" />} />
+              <Route path="/converter-tools" element={<CategoryPage category="converter" />} />
+              <Route path="/utility-tools" element={<CategoryPage category="utility" />} />
+              <Route path="/ai-tools" element={<CategoryPage category="ai" />} />
+              <Route path="/social-tools" element={<CategoryPage category="social" />} />
+              <Route path="/security-tools" element={<CategoryPage category="security" />} />
+              
+              {/* Legacy SEO Tool Pages */}
+              <Route path="/:id-tool.html" element={<ToolRouteWrapper Component={ToolSEOPage} />} />
+              
+              <Route path="*" element={<Home />} />
+            </Routes>
+          </Suspense>
+        </main>
+        <ChatBot />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

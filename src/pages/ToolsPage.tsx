@@ -400,6 +400,8 @@ const GuideRenderer = ({ toolId }: { toolId: string }) => {
   );
 };
 
+import { Link } from 'react-router-dom';
+
 const ToolsPage = () => {
   const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
@@ -540,19 +542,19 @@ const ToolsPage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <a
-                  href={`/tools/${tool.id}`}
+                <Link
+                  to={`/tools/${tool.id}`}
                   className="flex-1 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   Use Tool <ArrowRight size={16} />
-                </a>
-                <a
-                  href={`/guides/${tool.id}`}
+                </Link>
+                <Link
+                  to={`/guides/${tool.id}`}
                   className="p-4 bg-slate-50 text-slate-400 rounded-2xl hover:bg-slate-100 hover:text-slate-600 transition-all active:scale-95 shadow-3d-inner"
                   title="View Guide"
                 >
                   <FileText size={20} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

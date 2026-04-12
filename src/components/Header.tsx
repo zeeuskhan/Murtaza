@@ -3,9 +3,12 @@ import { Menu, X, Globe, Languages } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 
+import { Link, useLocation } from 'react-router-dom';
+
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const { pathname } = useLocation();
 
   const navItems = [
     { name: t('nav.home'), path: '/' },
@@ -16,7 +19,6 @@ const Header: React.FC = () => {
   ];
 
   const isActive = (path: string) => {
-    const pathname = window.location.pathname;
     if (path === '/' && (pathname === '/' || pathname === '/index.html' || pathname.endsWith('index.html'))) return true;
     return pathname === path || pathname.endsWith(path) || pathname === `${path}.html` || pathname.endsWith(`${path}.html`);
   };
@@ -26,7 +28,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group relative z-[60] card-3d px-3 py-1 rounded-xl bg-white/50">
+          <Link to="/" className="flex items-center gap-2 group relative z-[60] card-3d px-3 py-1 rounded-xl bg-white/50">
             <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform shadow-3d">
               <Globe size={24} />
             </div>
@@ -34,21 +36,21 @@ const Header: React.FC = () => {
               <span className="text-xl font-black text-slate-900 tracking-tight leading-none text-gradient">e-Mitra</span>
               <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest">Bhilwara</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 relative z-[60]">
             <div className="flex items-center gap-6 px-6 py-2 bg-white/50 rounded-2xl border border-white/20 shadow-3d-inner">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.path}
-                  href={item.path}
+                  to={item.path}
                   className={`inline-block px-2 py-1 text-sm font-bold transition-all relative z-[70] hover:-translate-y-0.5 ${
                     isActive(item.path) ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600'
                   }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
             
@@ -113,16 +115,16 @@ const Header: React.FC = () => {
           >
             <div className="px-6 py-8 flex flex-col gap-6">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.path}
-                  href={item.path}
+                  to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={`text-lg font-bold ${
                     isActive(item.path) ? 'text-indigo-600' : 'text-slate-500'
                   }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <a
                 href="tel:+916350489219"

@@ -4,6 +4,7 @@ import { Phone, MessageCircle, ArrowRight, Fingerprint, FileText, FileEdit, Zap,
 import { useLanguage } from '../context/LanguageContext';
 import { tools } from './ToolsPage';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -46,13 +47,13 @@ const Home: React.FC = () => {
                 <MessageCircle size={20} />
                 {t('hero.whatsapp')}
               </a>
-              <a 
-                href="/services"
+              <Link 
+                to="/services"
                 className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold border border-indigo-100 hover:bg-slate-50 transition-all active:scale-95 shadow-3d hover:shadow-3d-hover"
               >
                 {t('hero.cta')}
                 <ArrowRight size={20} />
-              </a>
+              </Link>
             </div>
           </motion.div>
           
@@ -81,12 +82,12 @@ const Home: React.FC = () => {
               <span className="text-indigo-600 font-bold tracking-widest uppercase text-xs">{t('home.servicesBadge')}</span>
               <h2 className="font-sans font-bold text-4xl text-slate-900 mt-2">{t('home.servicesTitle')}</h2>
             </div>
-            <a 
-              href="/services"
+            <Link 
+              to="/services"
               className="text-indigo-600 font-bold flex items-center gap-1 hover:gap-2 transition-all"
             >
               {t('home.viewAll')} <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -101,12 +102,12 @@ const Home: React.FC = () => {
               <p className="text-slate-500 mb-6 leading-relaxed">
                 {t('home.aadhaarDesc')}
               </p>
-              <a 
-                href="/services#aadhaar"
+              <Link 
+                to="/services#aadhaar"
                 className="text-indigo-600 font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
               >
                 View More <ChevronRight size={18} />
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div 
@@ -120,12 +121,12 @@ const Home: React.FC = () => {
               <p className="text-slate-500 mb-6 leading-relaxed">
                 {t('home.panDesc')}
               </p>
-              <a 
-                href="/services#pan"
+              <Link 
+                to="/services#pan"
                 className="text-indigo-600 font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
               >
                 View More <ChevronRight size={18} />
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div 
@@ -139,12 +140,12 @@ const Home: React.FC = () => {
               <p className="text-slate-500 mb-6 leading-relaxed">
                 {t('home.examDesc')}
               </p>
-              <a 
-                href="/services#exams"
+              <Link 
+                to="/services#exams"
                 className="text-indigo-600 font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
               >
                 View More <ChevronRight size={18} />
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -168,9 +169,9 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">PM Surya Ghar</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.suryaDesc')}</p>
-              <a href="/services#surya-ghar" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+              <Link to="/services#surya-ghar" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
                 Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div 
@@ -182,9 +183,9 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Kusum Yojana</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.kusumDesc')}</p>
-              <a href="/services#kusum-yojana" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+              <Link to="/services#kusum-yojana" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
                 Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
 
             <motion.div 
@@ -196,9 +197,9 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Food Security (NFSA)</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.nfsaDesc')}</p>
-              <a href="/forms" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+              <Link to="/forms" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
                 Download Form <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -212,12 +213,12 @@ const Home: React.FC = () => {
               <span className="text-indigo-600 font-bold tracking-widest uppercase text-xs">Free Online Tools</span>
               <h2 className="font-sans font-bold text-4xl text-slate-900 mt-2">Popular Digital Tools</h2>
             </div>
-            <a 
-              href="/tools"
+            <Link 
+              to="/tools"
               className="text-indigo-600 font-bold flex items-center gap-1 hover:gap-2 transition-all"
             >
               View All 300+ Tools <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -234,12 +235,12 @@ const Home: React.FC = () => {
                 <p className="text-slate-500 mb-8 text-sm leading-relaxed flex-grow">
                   {tool.description}
                 </p>
-                <a 
-                  href={`/tools/${tool.id}`}
+                <Link 
+                  to={`/tools/${tool.id}`}
                   className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-bold text-xs uppercase tracking-widest shadow-3d hover:bg-indigo-700 transition-all active:scale-[0.98] hover:shadow-3d-hover"
                 >
                   Use Tool <ArrowRight size={16} />
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -335,13 +336,13 @@ const Home: React.FC = () => {
               "Aadhaar Card Download", "PAN Card Apply Online", "Ration Card Status", "Voter ID Card Search", "Birth Certificate Online", "Death Certificate Download", "Income Certificate Form", "Caste Certificate Rajasthan", "Domicile Certificate Apply", "Jan Aadhaar Card Status", "SSO ID Rajasthan Login", "PM Surya Ghar Yojana Apply", "Kusum Yojana Registration", "NFSA Form Download",
               "Free Online Tools", "Digital India Services", "E-Mitra Bhilwara", "Government Forms PDF", "Online Document Editor", "Fast File Converter", "Secure Data Tools", "Privacy Friendly Tools", "No Registration Tools", "Unlimited Free Tools"
             ].map((keyword, i) => (
-              <a 
+              <Link 
                 key={i} 
-                href={`/tools?q=${keyword.toLowerCase().replace(/\s+/g, '+')}`}
+                to={`/tools?q=${keyword.toLowerCase().replace(/\s+/g, '+')}`}
                 className="px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-600 hover:border-indigo-400 hover:text-indigo-600 hover:shadow-sm transition-all"
               >
                 {keyword}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
