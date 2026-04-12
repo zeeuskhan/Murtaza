@@ -111,8 +111,9 @@ function App() {
               <Route path="/social-tools" element={<CategoryPage category="social" />} />
               <Route path="/security-tools" element={<CategoryPage category="security" />} />
               
-              {/* Legacy SEO Tool Pages */}
+              {/* Legacy SEO Tool Pages - Handle both with and without .html */}
               <Route path="/:id-tool.html" element={<ToolRouteWrapper Component={ToolSEOPage} />} />
+              <Route path="/:id-tool" element={<ToolRouteWrapper Component={ToolSEOPage} />} />
               
               <Route path="*" element={<Home />} />
             </Routes>
