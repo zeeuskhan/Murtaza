@@ -229,7 +229,7 @@ export const tools = [
   { id: 'base64-to-image', name: 'Base64 to Image', description: 'Convert Base64 strings back to viewable images.', category: 'utility', icon: ImageIcon },
 ];
 
-import ErrorBoundary from '../components/ErrorBoundary';
+import ErrorBoundary from '../components/ErrorBoundary.tsx';
 
 export const ToolRenderer = ({ toolId }: { toolId: string }) => {
   return (

@@ -16,12 +16,6 @@ async function startServer() {
     res.json({ status: "ok" });
   });
 
-  // Debug logging
-  app.use((req, res, next) => {
-    console.log(`${req.method} ${req.url} - Accept: ${req.headers.accept}`);
-    next();
-  });
-
   // Handle .html redirects/rewrites for backward compatibility
   app.use((req, res, next) => {
     if (req.path.endsWith('.html') && req.path !== '/index.html') {
