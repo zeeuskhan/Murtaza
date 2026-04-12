@@ -2,30 +2,10 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
-import { glob } from 'glob';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   
-  // Find all HTML files in root and tools directory
-  const rootHtmlFiles = glob.sync('*.html').reduce((acc, file) => {
-    const name = path.basename(file, '.html');
-    acc[name === 'index' ? 'main' : name] = path.resolve(__dirname, file);
-    return acc;
-  }, {} as Record<string, string>);
-
-  const toolsHtmlFiles = glob.sync('tools/*.html').reduce((acc, file) => {
-    const name = `tools/${path.basename(file, '.html')}`;
-    acc[name] = path.resolve(__dirname, file);
-    return acc;
-  }, {} as Record<string, string>);
-
-  const guidesHtmlFiles = glob.sync('guides/*.html').reduce((acc, file) => {
-    const name = `guides/${path.basename(file, '.html')}`;
-    acc[name] = path.resolve(__dirname, file);
-    return acc;
-  }, {} as Record<string, string>);
-
   return {
     base: '/',
     plugins: [react(), tailwindcss()],
@@ -35,9 +15,7 @@ export default defineConfig(({mode}) => {
     build: {
       rollupOptions: {
         input: {
-          ...rootHtmlFiles,
-          ...toolsHtmlFiles,
-          ...guidesHtmlFiles,
+          main: path.resolve(__dirname, 'index.html'),
         },
         output: {
           manualChunks: {

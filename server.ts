@@ -50,7 +50,7 @@ async function startServer() {
     // UNLESS it explicitly accepts HTML (which means it's a page reload/direct navigation)
     const isApi = url.startsWith('/api/');
     const hasExtension = url.includes('.');
-    const acceptsHtml = accept.includes('text/html');
+    const acceptsHtml = accept.includes('text/html') || accept.includes('*/*');
 
     if (method !== 'GET' || isApi || (hasExtension && !acceptsHtml)) {
       return next();
@@ -67,7 +67,12 @@ async function startServer() {
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } else {
         // Production mode: Serve the built index.html
-        res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
+        const indexPath = path.join(process.cwd(), 'dist', 'index.html');
+        if (fs.existsSync(indexPath)) {
+          res.sendFile(indexPath);
+        } else {
+          res.status(404).send('Not Found');
+        }
       }
     } catch (e) {
       if (process.env.NODE_ENV !== "production") {
