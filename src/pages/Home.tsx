@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                 {t('hero.whatsapp')}
               </a>
               <a 
-                href="/services.html"
+                href="/services"
                 className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold border border-indigo-100 hover:bg-slate-50 transition-colors active:scale-95"
               >
                 {t('hero.cta')}
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
               <h2 className="font-sans font-bold text-4xl text-slate-900 mt-2">{t('home.servicesTitle')}</h2>
             </div>
             <a 
-              href="/services.html"
+              href="/services"
               className="text-indigo-600 font-bold flex items-center gap-1 hover:gap-2 transition-all"
             >
               {t('home.viewAll')} <ArrowRight size={20} />
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                 {t('home.aadhaarDesc')}
               </p>
               <a 
-                href="/services.html#aadhaar"
+                href="/services#aadhaar"
                 className="text-indigo-600 font-semibold flex items-center gap-1"
               >
                 View More <ChevronRight size={16} />
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
                 {t('home.panDesc')}
               </p>
               <a 
-                href="/services.html#pan"
+                href="/services#pan"
                 className="text-indigo-600 font-semibold flex items-center gap-1"
               >
                 View More <ChevronRight size={16} />
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
                 {t('home.examDesc')}
               </p>
               <a 
-                href="/services.html#exams"
+                href="/services#exams"
                 className="text-indigo-600 font-semibold flex items-center gap-1"
               >
                 View More <ChevronRight size={16} />
@@ -156,7 +156,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">PM Surya Ghar</h3>
               <p className="text-slate-600 text-sm mb-6">{t('home.suryaDesc')}</p>
-              <a href="/services.html#surya-ghar" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
+              <a href="/services#surya-ghar" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
                 Learn More <ArrowRight size={16} />
               </a>
             </div>
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Kusum Yojana</h3>
               <p className="text-slate-600 text-sm mb-6">{t('home.kusumDesc')}</p>
-              <a href="/services.html#kusum-yojana" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
+              <a href="/services#kusum-yojana" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
                 Learn More <ArrowRight size={16} />
               </a>
             </div>
@@ -178,7 +178,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Food Security (NFSA)</h3>
               <p className="text-slate-600 text-sm mb-6">{t('home.nfsaDesc')}</p>
-              <a href="/forms.html" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
+              <a href="/forms" className="text-indigo-600 font-bold text-sm flex items-center gap-2">
                 Download Form <ArrowRight size={16} />
               </a>
             </div>
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
               <h2 className="font-sans font-bold text-4xl text-slate-900 mt-2">Popular Digital Tools</h2>
             </div>
             <a 
-              href="/tools.html"
+              href="/tools"
               className="text-indigo-600 font-bold flex items-center gap-1 hover:gap-2 transition-all"
             >
               View All 300+ Tools <ArrowRight size={20} />
@@ -217,7 +217,7 @@ const Home: React.FC = () => {
                   {tool.description}
                 </p>
                 <a 
-                  href={`/tools/${tool.id}.html`}
+                  href={`/tools/${tool.id}`}
                   className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-bold text-xs uppercase tracking-widest shadow-lg shadow-indigo-100 hover:bg-indigo-700 transition-all active:scale-[0.98]"
                 >
                   Use Tool <ArrowRight size={16} />
@@ -313,7 +313,7 @@ const Home: React.FC = () => {
             ].map((keyword, i) => (
               <a 
                 key={i} 
-                href={`/tools.html?q=${keyword.toLowerCase().replace(/\s+/g, '+')}`}
+                href={`/tools?q=${keyword.toLowerCase().replace(/\s+/g, '+')}`}
                 className="px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-600 hover:border-indigo-400 hover:text-indigo-600 hover:shadow-sm transition-all"
               >
                 {keyword}

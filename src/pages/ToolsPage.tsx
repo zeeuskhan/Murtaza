@@ -438,7 +438,7 @@ const ToolsPage = () => {
             "@type": "WebPage",
             "name": "Free Online Tools - e-Mitra Portal",
             "description": "A collection of 300+ free online tools for PDF, images, AI, and development.",
-            "url": "https://jansoochna.vercel.app/tools.html",
+            "url": "https://jansoochna.vercel.app/tools",
             "mainEntity": {
               "@type": "ItemList",
               "itemListElement": tools.slice(0, 10).map((tool, index) => ({
@@ -446,7 +446,7 @@ const ToolsPage = () => {
                 "position": index + 1,
                 "name": tool.name,
                 "description": tool.description,
-                "url": `https://jansoochna.vercel.app/tools/${tool.id}.html`
+                "url": `https://jansoochna.vercel.app/tools/${tool.id}`
               }))
             }
           })}
@@ -540,13 +540,13 @@ const ToolsPage = () => {
               
               <div className="flex items-center gap-3">
                 <a
-                  href={`/tools/${tool.id}.html`}
+                  href={`/tools/${tool.id}`}
                   className="flex-1 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   Use Tool <ArrowRight size={16} />
                 </a>
                 <a
-                  href={`/guides/${tool.id}.html`}
+                  href={`/guides/${tool.id}`}
                   className="p-4 bg-slate-50 text-slate-400 rounded-2xl hover:bg-slate-100 hover:text-slate-600 transition-all active:scale-95"
                   title="View Guide"
                 >

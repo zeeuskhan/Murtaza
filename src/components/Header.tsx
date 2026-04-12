@@ -8,17 +8,17 @@ const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
 
   const navItems = [
-    { name: t('nav.home'), path: '/index.html' },
-    { name: t('nav.services'), path: '/services.html' },
-    { name: t('nav.forms'), path: '/forms.html' },
-    { name: t('nav.tools'), path: '/tools.html' },
-    { name: t('nav.contact'), path: '/contact.html' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.services'), path: '/services' },
+    { name: t('nav.forms'), path: '/forms' },
+    { name: t('nav.tools'), path: '/tools' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   const isActive = (path: string) => {
     const pathname = window.location.pathname;
-    if (path === '/index.html' && (pathname === '/' || pathname === '/index.html' || pathname.endsWith('index.html'))) return true;
-    return pathname === path || pathname.endsWith(path);
+    if (path === '/' && (pathname === '/' || pathname === '/index.html' || pathname.endsWith('index.html'))) return true;
+    return pathname === path || pathname.endsWith(path) || pathname === `${path}.html` || pathname.endsWith(`${path}.html`);
   };
 
   return (
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="/index.html" className="flex items-center gap-2 group relative z-[60]">
+          <a href="/" className="flex items-center gap-2 group relative z-[60]">
             <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform">
               <Globe size={24} />
             </div>

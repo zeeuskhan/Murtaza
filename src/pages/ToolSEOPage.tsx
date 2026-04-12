@@ -16,7 +16,7 @@ const ToolSEOPage: React.FC<ToolSEOPageProps> = ({ toolId }) => {
       <div className="py-20 text-center">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Tool Not Found</h1>
         <p className="text-slate-600 mb-8">The tool SEO page you are looking for does not exist.</p>
-        <a href="/tools.html" className="text-indigo-600 font-bold hover:underline">Go back to Tools</a>
+        <a href="/tools" className="text-indigo-600 font-bold hover:underline">Go back to Tools</a>
       </div>
     );
   }
@@ -28,7 +28,7 @@ const ToolSEOPage: React.FC<ToolSEOPageProps> = ({ toolId }) => {
       {/* Hero Section */}
       <div className="bg-white border-b border-slate-100 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <a href="/tools.html" className="inline-flex items-center gap-2 text-indigo-600 font-bold mb-8 hover:gap-3 transition-all">
+          <a href="/tools" className="inline-flex items-center gap-2 text-indigo-600 font-bold mb-8 hover:gap-3 transition-all">
             <ArrowLeft size={20} /> Back to All Tools
           </a>
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
@@ -38,7 +38,7 @@ const ToolSEOPage: React.FC<ToolSEOPageProps> = ({ toolId }) => {
             {content.introduction}
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href={`/tools/${toolId}.html`} className="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">
+            <a href={`/tools/${toolId}`} className="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">
               Try {content.toolName} Now
             </a>
           </div>
@@ -151,7 +151,7 @@ const ToolSEOPage: React.FC<ToolSEOPageProps> = ({ toolId }) => {
               {content.relatedTools.map((tool, index) => (
                 <a 
                   key={index} 
-                  href={tool.link.endsWith('.html') ? tool.link : `${tool.link}.html`} 
+                  href={tool.link.replace('.html', '')} 
                   className="px-6 py-3 bg-white border border-slate-200 rounded-xl text-sm font-bold text-slate-600 hover:border-indigo-600 hover:text-indigo-600 transition-all"
                 >
                   {tool.name}
@@ -163,7 +163,7 @@ const ToolSEOPage: React.FC<ToolSEOPageProps> = ({ toolId }) => {
           {/* CTA */}
           <section className="text-center py-10">
             <h2 className="text-3xl font-black text-slate-900 mb-6">Ready to get started?</h2>
-            <a href={`/tools/${toolId}.html`} className="inline-block bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-xl">
+            <a href={`/tools/${toolId}`} className="inline-block bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-xl">
               Use {content.toolName} for Free
             </a>
           </section>

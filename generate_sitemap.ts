@@ -6,20 +6,19 @@ const lastMod = new Date().toISOString().split('T')[0];
 
 const pages = [
   '',
-  '/index.html',
-  '/services.html',
-  '/forms.html',
-  '/tools.html',
-  '/contact.html',
-  '/jobs.html',
-  '/pdf-tools.html',
-  '/image-tools.html',
-  '/text-tools.html',
-  '/converter-tools.html',
-  '/utility-tools.html',
-  '/ai-tools.html',
-  '/social-tools.html',
-  '/security-tools.html'
+  '/services',
+  '/forms',
+  '/tools',
+  '/contact',
+  '/jobs',
+  '/pdf-tools',
+  '/image-tools',
+  '/text-tools',
+  '/converter-tools',
+  '/utility-tools',
+  '/ai-tools',
+  '/social-tools',
+  '/security-tools'
 ];
 
 const toolIds = Object.keys(toolSEOContent);
@@ -32,19 +31,19 @@ pages.forEach(page => {
   sitemap += `  <url>
     <loc>${baseUrl}${page}</loc>
     <lastmod>${lastMod}</lastmod>
-    <priority>${page === '' || page === '/index.html' ? '1.0' : '0.8'}</priority>
+    <priority>${page === '' ? '1.0' : '0.8'}</priority>
   </url>
 `;
 });
 
 toolIds.forEach(id => {
   sitemap += `  <url>
-    <loc>${baseUrl}/tools/${id}.html</loc>
+    <loc>${baseUrl}/tools/${id}</loc>
     <lastmod>${lastMod}</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>${baseUrl}/guides/${id}.html</loc>
+    <loc>${baseUrl}/guides/${id}</loc>
     <lastmod>${lastMod}</lastmod>
     <priority>0.6</priority>
   </url>

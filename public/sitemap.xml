@@ -2,817 +2,812 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jansoochna.vercel.app</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/index.html</loc>
-    <lastmod>2026-04-11</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://jansoochna.vercel.app/services.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/services</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/forms.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/forms</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/contact.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/contact</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/jobs.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/jobs</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/pdf-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/pdf-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/image-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/image-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/text-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/text-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/converter-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/converter-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/utility-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/utility-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/ai-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/ai-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/social-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/social-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/security-tools.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/security-tools</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/merge-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/merge-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/merge-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/merge-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/split-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/split-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/split-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/split-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/compress-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/compress-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/compress-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/compress-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/rotate-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/rotate-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/rotate-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/rotate-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/pdf-to-word.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/pdf-to-word</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/pdf-to-word.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/pdf-to-word</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/word-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/word-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/word-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/word-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/pdf-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/pdf-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/pdf-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/pdf-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/pdf-to-jpg.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/pdf-to-jpg</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/pdf-to-jpg.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/pdf-to-jpg</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/jpg-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/jpg-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/jpg-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/jpg-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-compressor.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-compressor</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-compressor.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-compressor</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-resizer.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-resizer</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-resizer.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-resizer</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-filters.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-filters</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-filters.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-filters</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-cropper.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-cropper</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-cropper.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-cropper</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-to-base64.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-to-base64</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-to-base64.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-to-base64</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/base64-to-image.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/base64-to-image</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/base64-to-image.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/base64-to-image</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/word-counter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/word-counter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/word-counter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/word-counter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/case-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/case-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/case-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/case-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/lorem-ipsum.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/lorem-ipsum</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/lorem-ipsum.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/lorem-ipsum</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/text-to-speech.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/text-to-speech</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/text-to-speech.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/text-to-speech</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/remove-duplicates.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/remove-duplicates</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/remove-duplicates.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/remove-duplicates</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/reverse-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/reverse-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/reverse-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/reverse-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/binary-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/binary-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/binary-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/binary-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/json-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/json-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/json-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/json-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/sql-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/sql-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/sql-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/sql-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/extract-emails.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/extract-emails</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/extract-emails.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/extract-emails</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/extract-urls.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/extract-urls</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/extract-urls.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/extract-urls</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/text-to-morse.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/text-to-morse</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/text-to-morse.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/text-to-morse</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/morse-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/morse-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/morse-to-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/morse-to-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/unit-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/unit-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/unit-converter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/unit-converter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/json-to-csv.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/json-to-csv</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/json-to-csv.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/json-to-csv</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/csv-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/csv-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/csv-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/csv-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/xml-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/xml-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/xml-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/xml-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/password-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/password-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/password-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/password-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/qr-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/qr-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/qr-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/qr-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/qr-scanner.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/qr-scanner</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/qr-scanner.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/qr-scanner</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/age-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/age-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/age-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/age-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/date-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/date-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/date-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/date-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/url-shortener.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/url-shortener</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/url-shortener.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/url-shortener</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/ai-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/ai-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/ai-text.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/ai-text</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/ai-image.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/ai-image</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/ai-image.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/ai-image</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/ai-summarizer.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/ai-summarizer</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/ai-summarizer.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/ai-summarizer</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/yt-thumbnail.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/yt-thumbnail</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/yt-thumbnail.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/yt-thumbnail</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/wa-link.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/wa-link</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/wa-link.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/wa-link</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/ig-links.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/ig-links</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/ig-links.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/ig-links</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/password-strength.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/password-strength</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/password-strength.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/password-strength</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/cc-validator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/cc-validator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/cc-validator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/cc-validator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/iban-validator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/iban-validator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/iban-validator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/iban-validator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/percentage-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/percentage-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/percentage-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/percentage-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/random-number.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/random-number</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/random-number.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/random-number</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/random-string.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/random-string</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/random-string.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/random-string</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/image-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/image-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/image-to-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/image-to-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/json-to-xml.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/json-to-xml</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/json-to-xml.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/json-to-xml</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/bmi-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/bmi-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/bmi-calculator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/bmi-calculator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/md5-hash.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/md5-hash</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/md5-hash.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/md5-hash</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/sha256-hash.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/sha256-hash</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/sha256-hash.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/sha256-hash</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/base64-encode.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/base64-encode</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/base64-encode.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/base64-encode</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/base64-decode.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/base64-decode</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/base64-decode.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/base64-decode</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/json-to-yaml.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/json-to-yaml</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/json-to-yaml.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/json-to-yaml</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/yaml-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/yaml-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/yaml-to-json.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/yaml-to-json</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/uuid-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/uuid-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/uuid-generator.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/uuid-generator</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/unix-timestamp.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/unix-timestamp</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/unix-timestamp.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/unix-timestamp</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/html-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/html-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/html-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/html-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/html-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/html-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/html-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/html-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/css-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/css-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/css-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/css-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/css-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/css-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/css-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/css-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/js-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/js-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/js-formatter.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/js-formatter</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/js-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/js-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/js-minifier.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/js-minifier</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/url-encoder.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/url-encoder</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/url-encoder.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/url-encoder</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/url-decoder.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/url-decoder</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/url-decoder.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/url-decoder</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/organize-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/organize-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/organize-pdf.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/organize-pdf</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/add-watermark.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/add-watermark</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/add-watermark.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/add-watermark</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/tools/add-page-numbers.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/tools/add-page-numbers</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jansoochna.vercel.app/guides/add-page-numbers.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://jansoochna.vercel.app/guides/add-page-numbers</loc>
+    <lastmod>2026-04-12</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

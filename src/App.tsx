@@ -55,9 +55,9 @@ function App() {
 
   let content;
   const isPath = (name: string) => 
-    pathname.includes(`${name}.html`) || 
     pathname === `/${name}` || 
     pathname.endsWith(`/${name}`) ||
+    pathname.includes(`${name}.html`) || 
     pathname.endsWith(`/${name}.html`);
 
   if (isPath('services')) {

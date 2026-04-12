@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand */}
         <div className="space-y-6">
-          <a href="/index.html" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform">
               <Globe size={24} />
             </div>
@@ -36,11 +36,11 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-lg font-bold mb-6">{t('footer.quickLinks')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/index.html" className="hover:text-white transition-colors">{t('nav.home')}</a></li>
-            <li><a href="/services.html" className="hover:text-white transition-colors">{t('nav.services')}</a></li>
-            <li><a href="/forms.html" className="hover:text-white transition-colors">{t('nav.forms')}</a></li>
-            <li><a href="/jobs.html" className="hover:text-white transition-colors">{t('nav.jobs')}</a></li>
-            <li><a href="/contact.html" className="hover:text-white transition-colors">{t('nav.contact')}</a></li>
+            <li><a href="/" className="hover:text-white transition-colors">{t('nav.home')}</a></li>
+            <li><a href="/services" className="hover:text-white transition-colors">{t('nav.services')}</a></li>
+            <li><a href="/forms" className="hover:text-white transition-colors">{t('nav.forms')}</a></li>
+            <li><a href="/jobs" className="hover:text-white transition-colors">{t('nav.jobs')}</a></li>
+            <li><a href="/contact" className="hover:text-white transition-colors">{t('nav.contact')}</a></li>
           </ul>
         </div>
 
@@ -48,11 +48,11 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-lg font-bold mb-6">{t('nav.tools')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/pdf-tools.html" className="hover:text-white transition-colors">PDF Tools</a></li>
-            <li><a href="/image-tools.html" className="hover:text-white transition-colors">Image Tools</a></li>
-            <li><a href="/ai-tools.html" className="hover:text-white transition-colors">AI Tools</a></li>
-            <li><a href="/text-tools.html" className="hover:text-white transition-colors">Text Tools</a></li>
-            <li><a href="/utility-tools.html" className="hover:text-white transition-colors">Utility Tools</a></li>
+            <li><a href="/pdf-tools" className="hover:text-white transition-colors">PDF Tools</a></li>
+            <li><a href="/image-tools" className="hover:text-white transition-colors">Image Tools</a></li>
+            <li><a href="/ai-tools" className="hover:text-white transition-colors">AI Tools</a></li>
+            <li><a href="/text-tools" className="hover:text-white transition-colors">Text Tools</a></li>
+            <li><a href="/utility-tools" className="hover:text-white transition-colors">Utility Tools</a></li>
           </ul>
         </div>
 
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
             "Password Meter", "CC Validator", "IBAN Validator",
             "Aadhaar Download", "PAN Card Apply", "Ration Card", "Voter ID", "Birth Certificate", "Death Certificate", "Income Certificate", "Caste Certificate", "Domicile Certificate", "Jan Aadhaar", "SSO ID Login", "PM Surya Ghar", "Kusum Yojana", "NFSA Form"
           ].map((k, i) => (
-            <a key={i} href={`/tools.html?q=${k.toLowerCase().replace(/\s+/g, '+')}`} className="hover:text-indigo-400 transition-colors uppercase tracking-widest">{k}</a>
+            <a key={i} href={`/tools?q=${k.toLowerCase().replace(/\s+/g, '+')}`} className="hover:text-indigo-400 transition-colors uppercase tracking-widest">{k}</a>
           ))}
         </div>
         <p>{t('footer.rights')}</p>
