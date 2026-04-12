@@ -22,36 +22,38 @@ const Header: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <nav className="sticky top-0 z-50 glass-3d border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group relative z-[60]">
-            <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform">
+          <a href="/" className="flex items-center gap-2 group relative z-[60] card-3d px-3 py-1 rounded-xl bg-white/50">
+            <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform shadow-3d">
               <Globe size={24} />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black text-slate-900 tracking-tight leading-none">e-Mitra</span>
+              <span className="text-xl font-black text-slate-900 tracking-tight leading-none text-gradient">e-Mitra</span>
               <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest">Bhilwara</span>
             </div>
           </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 relative z-[60]">
-            {navItems.map((item) => (
-              <a
-                key={item.path}
-                href={item.path}
-                className={`inline-block px-2 py-1 text-sm font-bold transition-colors relative z-[70] ${
-                  isActive(item.path) ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600'
-                }`}
-              >
-                {item.name}
-              </a>
-            ))}
+            <div className="flex items-center gap-6 px-6 py-2 bg-white/50 rounded-2xl border border-white/20 shadow-3d-inner">
+              {navItems.map((item) => (
+                <a
+                  key={item.path}
+                  href={item.path}
+                  className={`inline-block px-2 py-1 text-sm font-bold transition-all relative z-[70] hover:-translate-y-0.5 ${
+                    isActive(item.path) ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600'
+                  }`}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
             
             {/* Language Toggle */}
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 rounded-full border border-slate-100 relative z-[60]">
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-white/50 rounded-full border border-white/20 shadow-3d-inner relative z-[60]">
               <Languages size={14} className="text-slate-400" />
               <button 
                 onClick={() => setLanguage('en')}
@@ -70,7 +72,7 @@ const Header: React.FC = () => {
 
             <a
               href="tel:+916350489219"
-              className="bg-indigo-600 text-white px-8 py-3 rounded-[24px] text-xs font-black uppercase tracking-widest shadow-xl shadow-indigo-100 hover:scale-105 transition-all relative z-[60]"
+              className="bg-indigo-600 text-white px-8 py-3 rounded-xl text-xs font-black uppercase tracking-widest shadow-3d hover:scale-105 hover:shadow-3d-hover transition-all relative z-[60]"
             >
               {t('nav.callUs')}
             </a>

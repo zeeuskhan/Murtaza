@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { Helmet } from 'react-helmet-async';
 import { 
   Fingerprint, 
   CreditCard, 
@@ -14,13 +15,13 @@ import {
 const ServiceDetail = ({ id, title, icon: Icon, about, who, docs, steps, notes, website, searchQuery }: any) => {
   const { t } = useLanguage();
   return (
-    <div id={id} className="scroll-mt-24 mb-20 bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
+    <div id={id} className="scroll-mt-24 mb-20 bg-white rounded-[40px] shadow-3d border border-slate-100 overflow-hidden card-3d">
       <div className="p-8 md:p-12">
         <div className="flex items-center gap-4 mb-8">
-          <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600">
+          <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600 shadow-3d-inner">
             <Icon size={32} />
           </div>
-          <h2 className="text-3xl font-black text-slate-900">{title}</h2>
+          <h2 className="text-3xl font-black text-slate-900 text-gradient">{title}</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -73,7 +74,7 @@ const ServiceDetail = ({ id, title, icon: Icon, about, who, docs, steps, notes, 
             href={website} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-95"
           >
             {t('services.visitOfficial')}
           </a>
@@ -82,7 +83,7 @@ const ServiceDetail = ({ id, title, icon: Icon, about, who, docs, steps, notes, 
               const query = encodeURIComponent(searchQuery);
               window.open(`https://www.google.com/search?q=${query}`, '_blank');
             }}
-            className="inline-flex items-center gap-2 bg-white text-indigo-600 border border-indigo-100 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-indigo-600 border border-indigo-100 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 transition-all shadow-3d hover:shadow-3d-hover active:scale-95"
           >
             {t('services.downloadForm')}
           </button>
@@ -397,8 +398,15 @@ const ServicesPage = () => {
 
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">{t('services.pageTitle')}</h1>
+      <Helmet>
+        <title>e-Mitra Services Bhilwara | Aadhaar, PAN, Exam Forms, Schemes</title>
+        <meta name="description" content="Complete list of e-Mitra services in Bhilwara. Apply for Aadhaar update, PAN card, government exam forms, scholarship, and solar schemes online." />
+        <meta name="keywords" content="e-Mitra services list Rajasthan, Aadhaar center Bhilwara, PAN card application, government schemes Rajasthan, solar pump subsidy" />
+        <link rel="canonical" href="https://jansoochna.vercel.app/services" />
+      </Helmet>
+      
+      <div className="text-center mb-16 perspective-container">
+        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight text-gradient">{t('services.pageTitle')}</h1>
         <p className="text-xl text-slate-500 max-w-2xl mx-auto">
           {t('services.pageSubtitle')}
         </p>

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Briefcase, Calendar, Building2, ArrowRight, ExternalLink, GraduationCap, CheckCircle2, Globe, Loader2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { GoogleGenAI } from "@google/genai";
+import { Helmet } from 'react-helmet-async';
 
 interface Job {
   id?: string;
@@ -221,8 +222,15 @@ const JobsPage: React.FC = () => {
 
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
+      <Helmet>
+        <title>Latest Government Jobs 2026 | Rajasthan Bharti, REET, SSC | e-Mitra</title>
+        <meta name="description" content="Stay updated with the latest government job notifications in Rajasthan and India. Apply for Rajasthan Police, REET, SSC, and more at e-Mitra Bhilwara." />
+        <meta name="keywords" content="latest government jobs Rajasthan 2026, Rajasthan police bharti, REET notification, SSC MTS vacancy, e-Mitra job application" />
+        <link rel="canonical" href="https://jansoochna.vercel.app/jobs" />
+      </Helmet>
+
+      <div className="text-center mb-16 perspective-container">
+        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight text-gradient">
           {isHi ? 'नवीनतम सरकारी नौकरियां और मार्गदर्शिका' : 'Latest Government Jobs & Guidelines'}
         </h1>
         <p className="text-xl text-slate-500 max-w-2xl mx-auto">
@@ -261,7 +269,7 @@ const JobsPage: React.FC = () => {
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map(i => (
-              <div key={i} className="animate-pulse bg-white p-8 rounded-3xl border border-slate-100 h-64 shadow-sm" />
+              <div key={i} className="animate-pulse bg-white p-8 rounded-[40px] border border-slate-100 h-64 shadow-3d" />
             ))}
           </div>
         ) : (
@@ -269,21 +277,22 @@ const JobsPage: React.FC = () => {
             {jobs.map((job, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20, rotateY: 10 }}
+                animate={{ opacity: 1, y: 0, rotateY: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group"
+                whileHover={{ y: -10, rotateX: 2, rotateY: -2 }}
+                className="bg-white p-8 rounded-[40px] shadow-3d border border-slate-100 hover:shadow-3d-hover transition-all group card-3d"
               >
                 <div className="flex justify-between items-start mb-6">
-                  <div className="p-3 bg-indigo-50 rounded-2xl text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                  <div className="p-3 bg-indigo-50 rounded-2xl text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-3d-inner">
                     <Building2 size={24} />
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-bold text-rose-500 bg-rose-50 px-3 py-1 rounded-full">
+                  <div className="flex items-center gap-1 text-xs font-bold text-rose-500 bg-rose-50 px-3 py-1 rounded-full shadow-3d-inner">
                     <Calendar size={14} />
                     {job.lastDate}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2 leading-tight">{job.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 leading-tight group-hover:text-indigo-600 transition-colors">{job.title}</h3>
                 <p className="text-sm font-bold text-indigo-600 mb-4">{job.organization}</p>
                 <p className="text-slate-500 text-sm mb-8 line-clamp-3 leading-relaxed">
                   {job.description}
@@ -292,7 +301,7 @@ const JobsPage: React.FC = () => {
                   href={job.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-indigo-600 transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 text-white py-4 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-95"
                 >
                   {isHi ? 'विवरण देखें' : 'View Details'} <ArrowRight size={18} />
                 </a>
@@ -315,8 +324,8 @@ const JobsPage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {guidelines.map((guide, i) => (
-            <div key={i} className="flex gap-6 p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:border-indigo-200 transition-colors">
-              <div className="flex-shrink-0 w-12 h-12 bg-emerald-50 rounded-2xl text-emerald-600 flex items-center justify-center">
+            <div key={i} className="flex gap-6 p-8 bg-white rounded-[40px] border border-slate-100 shadow-3d hover:shadow-3d-hover transition-all card-3d">
+              <div className="flex-shrink-0 w-12 h-12 bg-emerald-50 rounded-2xl text-emerald-600 flex items-center justify-center shadow-3d-inner">
                 <CheckCircle2 size={24} />
               </div>
               <div>
@@ -349,9 +358,9 @@ const JobsPage: React.FC = () => {
               href={site.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-indigo-100 transition-all text-center group"
+              className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-slate-100 shadow-3d hover:shadow-3d-hover hover:border-indigo-100 transition-all text-center group card-3d"
             >
-              <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-colors mb-3">
+              <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-all duration-300 shadow-3d-inner mb-3">
                 <ExternalLink size={20} />
               </div>
               <span className="text-sm font-bold text-slate-700">{site.name}</span>

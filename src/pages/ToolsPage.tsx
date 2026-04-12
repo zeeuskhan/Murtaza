@@ -454,18 +454,19 @@ const ToolsPage = () => {
       </Helmet>
 
       {/* Header Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 perspective-container">
         <motion.h1 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -30, rotateX: 20 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight"
         >
-          Free Online <span className="text-indigo-600">Tools</span>
+          Free Online <span className="text-gradient">Tools</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.2 }}
           className="text-xl text-slate-500 max-w-2xl mx-auto"
         >
           300+ professional tools for PDF, images, AI, and development. Fast, free, and secure.
@@ -485,7 +486,7 @@ const ToolsPage = () => {
           />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap justify-center gap-3">
           {categories.map((cat) => {
             const Icon = cat.icon;
             const isActive = activeCategory === cat.id;
@@ -493,9 +494,9 @@ const ToolsPage = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all ${
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-3d hover:shadow-3d-hover active:scale-95 ${
                   isActive 
-                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' 
+                    ? 'bg-indigo-600 text-white shadow-indigo-200' 
                     : 'bg-white text-slate-600 border border-slate-200 hover:border-indigo-300 hover:text-indigo-600'
                 }`}
               >
@@ -514,18 +515,18 @@ const ToolsPage = () => {
             <motion.div
               key={tool.id}
               layout
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.9, rotateY: 10 }}
+              animate={{ opacity: 1, scale: 1, rotateY: 0 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              whileHover={{ y: -5 }}
-              className="group bg-white rounded-[32px] p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-100 transition-all duration-300 flex flex-col h-full"
+              whileHover={{ y: -10, rotateX: 2, rotateY: -2 }}
+              className="group bg-white rounded-[40px] p-8 border border-slate-100 shadow-3d hover:shadow-3d-hover hover:border-indigo-100 transition-all duration-500 flex flex-col h-full card-3d"
             >
               <div className="flex items-start justify-between mb-6">
-                <div className="p-4 bg-slate-50 rounded-2xl group-hover:bg-indigo-50 transition-colors">
-                  <tool.icon className="w-8 h-8 text-slate-600 group-hover:text-indigo-600" />
+                <div className="p-4 bg-slate-50 rounded-2xl group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-3d-inner">
+                  <tool.icon className="w-8 h-8 group-hover:text-white transition-colors" />
                 </div>
                 {tool.popular && (
-                  <span className="px-3 py-1 bg-amber-50 text-amber-600 text-[10px] font-black uppercase tracking-widest rounded-full flex items-center gap-1">
+                  <span className="px-3 py-1 bg-amber-50 text-amber-600 text-[10px] font-black uppercase tracking-widest rounded-full flex items-center gap-1 shadow-3d-inner">
                     <Star size={10} fill="currentColor" /> Popular
                   </span>
                 )}
@@ -541,13 +542,13 @@ const ToolsPage = () => {
               <div className="flex items-center gap-3">
                 <a
                   href={`/tools/${tool.id}`}
-                  className="flex-1 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 active:scale-[0.98] flex items-center justify-center gap-2"
+                  className="flex-1 bg-indigo-600 text-white px-6 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   Use Tool <ArrowRight size={16} />
                 </a>
                 <a
                   href={`/guides/${tool.id}`}
-                  className="p-4 bg-slate-50 text-slate-400 rounded-2xl hover:bg-slate-100 hover:text-slate-600 transition-all active:scale-95"
+                  className="p-4 bg-slate-50 text-slate-400 rounded-2xl hover:bg-slate-100 hover:text-slate-600 transition-all active:scale-95 shadow-3d-inner"
                   title="View Guide"
                 >
                   <FileText size={20} />

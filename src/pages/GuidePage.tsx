@@ -32,19 +32,19 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="bg-white border-b border-slate-100 py-16 md:py-24">
+      <div className="bg-white border-b border-slate-100 py-16 md:py-24 perspective-container">
         <div className="max-w-4xl mx-auto px-6">
           <a href="/tools" className="inline-flex items-center gap-2 text-indigo-600 font-bold mb-8 hover:gap-3 transition-all">
             <ArrowLeft size={20} /> Back to All Tools
           </a>
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight leading-tight text-gradient">
             How to Use {content.toolName} Online
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
             Follow our comprehensive guide to master the {content.toolName} tool. Learn how to get the best results in seconds.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href={`/tools/${toolId}`} className="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 flex items-center gap-2">
+            <a href={`/tools/${toolId}`} className="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-95 flex items-center gap-2">
               <Wrench size={20} /> Try {content.toolName} Tool
             </a>
           </div>
@@ -56,9 +56,9 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
         <div className="grid grid-cols-1 gap-16">
           
           {/* Introduction */}
-          <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
+          <section className="bg-white p-8 md:p-12 rounded-[40px] shadow-3d border border-slate-100 card-3d">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600 shadow-3d-inner">
                 <Info size={28} />
               </div>
               <h2 className="text-3xl font-black text-slate-900">Introduction</h2>
@@ -69,21 +69,21 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
           </section>
 
           {/* Step-by-Step Explanation */}
-          <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
+          <section className="bg-white p-8 md:p-12 rounded-[40px] shadow-3d border border-slate-100 card-3d">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600 shadow-3d-inner">
                 <ListChecks size={28} />
               </div>
               <h2 className="text-3xl font-black text-slate-900">Step-by-Step Explanation</h2>
             </div>
             <div className="space-y-8">
               {content.howToUseSteps.map((step, index) => (
-                <div key={index} className="flex gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold flex items-center justify-center text-xl shadow-lg shadow-indigo-100">
+                <div key={index} className="flex gap-6 group">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-indigo-600 text-white font-bold flex items-center justify-center text-xl shadow-3d group-hover:shadow-3d-hover transition-all">
                     {index + 1}
                   </div>
                   <div className="pt-1">
-                    <p className="text-slate-700 leading-relaxed text-lg">{step}</p>
+                    <p className="text-slate-700 leading-relaxed text-lg group-hover:text-indigo-600 transition-colors">{step}</p>
                   </div>
                 </div>
               ))}
@@ -91,9 +91,9 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
           </section>
 
           {/* How it Works (Technical/Detailed) */}
-          <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
+          <section className="bg-white p-8 md:p-12 rounded-[40px] shadow-3d border border-slate-100 card-3d">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+              <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600 shadow-3d-inner">
                 <PlayCircle size={28} />
               </div>
               <h2 className="text-3xl font-black text-slate-900">How It Works</h2>
@@ -113,7 +113,7 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {content.features.map((feature, index) => (
-                <div key={index} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div key={index} className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-3d hover:shadow-3d-hover transition-all card-3d">
                   <h3 className="font-bold text-slate-900 mb-2 text-lg">{feature.title}</h3>
                   <p className="text-slate-600 leading-relaxed">{feature.description}</p>
                 </div>
@@ -122,21 +122,22 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
           </section>
 
           {/* Common Use Cases */}
-          <section className="bg-indigo-900 text-white p-8 md:p-12 rounded-3xl shadow-xl">
-            <h2 className="text-3xl font-black mb-8">Common Use Cases</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <section className="bg-indigo-900 text-white p-8 md:p-12 rounded-[40px] shadow-3d card-3d relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2" />
+            <h2 className="text-3xl font-black mb-8 relative z-10">Common Use Cases</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
               {content.useCases.map((useCase, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="w-8 h-1 bg-indigo-400 rounded-full" />
-                  <p className="text-indigo-100 leading-relaxed text-lg">{useCase}</p>
+                <div key={index} className="space-y-2 group">
+                  <div className="w-8 h-1 bg-indigo-400 rounded-full group-hover:w-16 transition-all" />
+                  <p className="text-indigo-100 leading-relaxed text-lg group-hover:text-white transition-colors">{useCase}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* Security */}
-          <section className="flex flex-col md:flex-row items-center gap-10 bg-emerald-50 p-8 md:p-12 rounded-3xl border border-emerald-100">
-            <div className="p-6 bg-white rounded-2xl text-emerald-600 shadow-sm">
+          <section className="flex flex-col md:flex-row items-center gap-10 bg-emerald-50 p-8 md:p-12 rounded-[40px] border border-emerald-100 shadow-3d card-3d">
+            <div className="p-6 bg-white rounded-2xl text-emerald-600 shadow-3d-inner">
               <ShieldCheck size={48} />
             </div>
             <div>
@@ -150,20 +151,24 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
           {/* FAQs */}
           <section>
             <div className="flex items-center gap-4 mb-10">
-              <div className="p-3 bg-amber-50 rounded-xl text-amber-600">
+              <div className="p-3 bg-amber-50 rounded-xl text-amber-600 shadow-3d-inner">
                 <HelpCircle size={28} />
               </div>
               <h2 className="text-3xl font-black text-slate-900">Frequently Asked Questions</h2>
             </div>
             <div className="space-y-4">
               {content.faqs.map((faq, index) => (
-                <details key={index} className="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-                  <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 hover:bg-slate-50 transition-colors text-lg">
+                <details key={index} className="group bg-white rounded-[32px] border border-slate-100 shadow-3d hover:shadow-3d-hover transition-all duration-300 card-3d overflow-hidden">
+                  <summary className="flex items-center justify-between p-8 cursor-pointer font-bold text-slate-900 hover:bg-slate-50 transition-colors text-lg list-none">
                     {faq.question}
-                    <span className="text-indigo-600 group-open:rotate-180 transition-transform">+</span>
+                    <div className="p-2 bg-indigo-50 rounded-xl shadow-3d-inner group-open:rotate-180 transition-transform">
+                      <span className="text-indigo-600 text-2xl leading-none">+</span>
+                    </div>
                   </summary>
-                  <div className="px-6 pb-6 text-slate-600 leading-relaxed text-lg">
-                    {faq.answer}
+                  <div className="px-8 pb-8 text-slate-600 leading-relaxed text-lg">
+                    <div className="pt-4 border-t border-slate-200/50">
+                      {faq.answer}
+                    </div>
                   </div>
                 </details>
               ))}
@@ -171,9 +176,9 @@ const GuidePage: React.FC<GuidePageProps> = ({ toolId }) => {
           </section>
 
           {/* Internal Tool Link */}
-          <section className="text-center py-10 bg-white rounded-3xl border border-slate-200 shadow-sm">
-            <h2 className="text-3xl font-black text-slate-900 mb-6">Try our free {content.toolName} Tool here.</h2>
-            <a href={`/tools/${toolId}`} className="inline-block bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-xl text-lg">
+          <section className="text-center py-16 bg-white rounded-[40px] border border-slate-200 shadow-3d card-3d">
+            <h2 className="text-3xl font-black text-slate-900 mb-8">Try our free {content.toolName} Tool here.</h2>
+            <a href={`/tools/${toolId}`} className="inline-block bg-indigo-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-3d hover:shadow-3d-hover active:scale-95 text-lg">
               Open {content.toolName}
             </a>
           </section>

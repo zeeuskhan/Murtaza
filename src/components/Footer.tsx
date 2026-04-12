@@ -6,16 +6,20 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-slate-900 text-white pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    <footer className="bg-slate-900 text-white pt-20 pb-10 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/10 blur-[120px] rounded-full -translate-y-1/2" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full translate-y-1/2" />
+
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative z-10">
         {/* Brand */}
         <div className="space-y-6">
-          <a href="/" className="flex items-center gap-2 group">
-            <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform">
+          <a href="/" className="flex items-center gap-2 group perspective-container">
+            <div className="p-2 bg-indigo-600 rounded-lg text-white group-hover:rotate-12 transition-transform shadow-3d">
               <Globe size={24} />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black text-white tracking-tight leading-none">e-Mitra</span>
+              <span className="text-xl font-black text-white tracking-tight leading-none group-hover:text-indigo-400 transition-colors">e-Mitra</span>
               <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Bhilwara</span>
             </div>
           </a>
@@ -23,10 +27,10 @@ const Footer: React.FC = () => {
             {t('footer.description')}
           </p>
           <div className="flex gap-4">
-            <a href="https://wa.me/916350489219" className="p-2 bg-slate-800 rounded-lg text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all">
+            <a href="https://wa.me/916350489219" className="p-3 bg-slate-800 rounded-xl text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all shadow-3d hover:shadow-3d-hover active:scale-95">
               <MessageCircle size={20} />
             </a>
-            <a href="tel:+916350489219" className="p-2 bg-slate-800 rounded-lg text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all">
+            <a href="tel:+916350489219" className="p-3 bg-slate-800 rounded-xl text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all shadow-3d hover:shadow-3d-hover active:scale-95">
               <Phone size={20} />
             </a>
           </div>
@@ -34,43 +38,49 @@ const Footer: React.FC = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-bold mb-6">{t('footer.quickLinks')}</h4>
+          <h4 className="text-lg font-bold mb-6 text-indigo-400">{t('footer.quickLinks')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/" className="hover:text-white transition-colors">{t('nav.home')}</a></li>
-            <li><a href="/services" className="hover:text-white transition-colors">{t('nav.services')}</a></li>
-            <li><a href="/forms" className="hover:text-white transition-colors">{t('nav.forms')}</a></li>
-            <li><a href="/jobs" className="hover:text-white transition-colors">{t('nav.jobs')}</a></li>
-            <li><a href="/contact" className="hover:text-white transition-colors">{t('nav.contact')}</a></li>
+            <li><a href="/" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.home')}</a></li>
+            <li><a href="/services" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.services')}</a></li>
+            <li><a href="/forms" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.forms')}</a></li>
+            <li><a href="/jobs" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.jobs')}</a></li>
+            <li><a href="/contact" className="hover:text-white hover:translate-x-1 transition-all inline-block">{t('nav.contact')}</a></li>
           </ul>
         </div>
 
         {/* Tools */}
         <div>
-          <h4 className="text-lg font-bold mb-6">{t('nav.tools')}</h4>
+          <h4 className="text-lg font-bold mb-6 text-indigo-400">{t('nav.tools')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li><a href="/pdf-tools" className="hover:text-white transition-colors">PDF Tools</a></li>
-            <li><a href="/image-tools" className="hover:text-white transition-colors">Image Tools</a></li>
-            <li><a href="/ai-tools" className="hover:text-white transition-colors">AI Tools</a></li>
-            <li><a href="/text-tools" className="hover:text-white transition-colors">Text Tools</a></li>
-            <li><a href="/utility-tools" className="hover:text-white transition-colors">Utility Tools</a></li>
+            <li><a href="/tools" className="hover:text-white hover:translate-x-1 transition-all inline-block">All Tools</a></li>
+            <li><a href="/tools?category=pdf" className="hover:text-white hover:translate-x-1 transition-all inline-block">PDF Tools</a></li>
+            <li><a href="/tools?category=image" className="hover:text-white hover:translate-x-1 transition-all inline-block">Image Tools</a></li>
+            <li><a href="/tools?category=ai" className="hover:text-white hover:translate-x-1 transition-all inline-block">AI Tools</a></li>
+            <li><a href="/tools?category=text" className="hover:text-white hover:translate-x-1 transition-all inline-block">Text Tools</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h4 className="text-lg font-bold mb-6">{t('footer.contactUs')}</h4>
+          <h4 className="text-lg font-bold mb-6 text-indigo-400">{t('footer.contactUs')}</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li className="flex items-start gap-3">
-              <MapPin size={18} className="text-indigo-500 flex-shrink-0" />
-              <span>New Nagari, Mustafa Nagar, Pur-Bhilwara, Rajasthan</span>
+            <li className="flex items-start gap-3 group">
+              <div className="p-2 bg-slate-800 rounded-lg text-indigo-500 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-3d">
+                <MapPin size={18} />
+              </div>
+              <span className="group-hover:text-slate-200 transition-colors">New Nagari, Mustafa Nagar, Pur-Bhilwara, Rajasthan</span>
             </li>
-            <li className="flex items-center gap-3">
-              <Phone size={18} className="text-indigo-500 flex-shrink-0" />
-              <span>+91 63504 89219</span>
+            <li className="flex items-center gap-3 group">
+              <div className="p-2 bg-slate-800 rounded-lg text-indigo-500 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-3d">
+                <Phone size={18} />
+              </div>
+              <span className="group-hover:text-slate-200 transition-colors">+91 63504 89219</span>
             </li>
-            <li className="flex items-center gap-3">
-              <Mail size={18} className="text-indigo-500 flex-shrink-0" />
-              <span>murtazadarvesh@gmail.com</span>
+            <li className="flex items-center gap-3 group">
+              <div className="p-2 bg-slate-800 rounded-lg text-indigo-500 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-3d">
+                <Mail size={18} />
+              </div>
+              <span className="group-hover:text-slate-200 transition-colors">murtazadarvesh@gmail.com</span>
             </li>
           </ul>
         </div>

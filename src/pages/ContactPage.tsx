@@ -1,21 +1,28 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const ContactPage = () => {
   const { t } = useLanguage();
   return (
     <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">{t('contact.title')}</h1>
+      <Helmet>
+        <title>Contact e-Mitra Bhilwara | Address, Phone, Location</title>
+        <meta name="description" content="Contact our e-Mitra center in Bhilwara for Aadhaar, PAN, and government services. Find our address, phone number, and Google Maps location." />
+        <link rel="canonical" href="https://jansoochna.vercel.app/contact" />
+      </Helmet>
+
+      <div className="text-center mb-16 perspective-container">
+        <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight text-gradient">{t('contact.title')}</h1>
         <p className="text-xl text-slate-500">{t('contact.subtitle')}</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-8">
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-8">
-            <div className="flex items-start gap-6">
-              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600">
+          <div className="bg-white p-8 rounded-[40px] shadow-3d border border-slate-100 space-y-8 card-3d">
+            <div className="flex items-start gap-6 group">
+              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600 shadow-3d-inner group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                 <MapPin size={28} />
               </div>
               <div>
@@ -26,8 +33,8 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6">
-              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600">
+            <div className="flex items-start gap-6 group">
+              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600 shadow-3d-inner group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                 <Phone size={28} />
               </div>
               <div>
@@ -37,8 +44,8 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6">
-              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600">
+            <div className="flex items-start gap-6 group">
+              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600 shadow-3d-inner group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                 <Mail size={28} />
               </div>
               <div>
@@ -47,8 +54,8 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-6">
-              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600">
+            <div className="flex items-start gap-6 group">
+              <div className="p-4 bg-indigo-50 rounded-2xl text-indigo-600 shadow-3d-inner group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                 <Clock size={28} />
               </div>
               <div>
@@ -59,7 +66,7 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div className="h-[500px] rounded-3xl overflow-hidden shadow-sm border border-slate-100">
+        <div className="h-[500px] rounded-[40px] overflow-hidden shadow-3d border border-slate-100 card-3d">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14467.44754746654!2d74.583333!3d25.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c23637639955%3A0x3f4291069024097!2sPur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1711800000000!5m2!1sen!2sin" 
             width="100%" 
