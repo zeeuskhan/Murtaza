@@ -154,9 +154,17 @@ const Home: React.FC = () => {
       {/* Government Schemes Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-sans font-bold text-4xl text-slate-900">{t('home.schemesTitle')}</h2>
-            <p className="text-slate-500 mt-4">{t('home.schemesSubtitle')}</p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+              <h2 className="font-sans font-bold text-4xl text-slate-900">{t('home.schemesTitle')}</h2>
+              <p className="text-slate-500 mt-4">{t('home.schemesSubtitle')}</p>
+            </div>
+            <Link 
+              to="/schemes"
+              className="text-indigo-600 font-bold flex items-center gap-1 hover:gap-2 transition-all"
+            >
+              View All Schemes <ArrowRight size={20} />
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -169,7 +177,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">PM Surya Ghar</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.suryaDesc')}</p>
-              <Link to="/services#surya-ghar" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+              <Link to="/schemes" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
                 Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -183,7 +191,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Kusum Yojana</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.kusumDesc')}</p>
-              <Link to="/services#kusum-yojana" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+              <Link to="/schemes" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
                 Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -197,8 +205,8 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Food Security (NFSA)</h3>
               <p className="text-slate-600 text-sm mb-6 leading-relaxed">{t('home.nfsaDesc')}</p>
-              <Link to="/forms" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
-                Download Form <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <Link to="/schemes" className="text-indigo-600 font-bold text-sm flex items-center gap-2 group">
+                Learn More <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
           </div>

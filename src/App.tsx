@@ -37,6 +37,7 @@ const ToolPage = lazy(() => import('./pages/ToolPage'));
 const GuidePage = lazy(() => import('./pages/GuidePage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage'));
 const JobsPage = lazy(() => import('./pages/JobsPage'));
+const SchemesPage = lazy(() => import('./pages/SchemesPage'));
 
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
@@ -98,6 +99,9 @@ function App() {
               
               <Route path="/jobs" element={<JobsPage />} />
               <Route path="/jobs.html" element={<Navigate to="/jobs" replace />} />
+              
+              <Route path="/schemes" element={<SchemesPage />} />
+              <Route path="/schemes.html" element={<Navigate to="/schemes" replace />} />
               
               <Route path="/tools/:id" element={<ToolRouteWrapper Component={ToolPage} />} />
               <Route path="/guides/:id" element={<ToolRouteWrapper Component={GuidePage} />} />
