@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Globe, Languages, Phone } from 'lucide-react';
+import { Menu, X, Globe, Languages } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -41,28 +41,18 @@ const Header: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 relative z-[60]">
-            <div className="flex items-center gap-2 px-4 py-2 bg-white/50 rounded-2xl border border-white/20 shadow-3d-inner">
-              {navItems.map((item) => {
-                const active = isActive(item.path);
-                return (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`inline-block px-4 py-2 text-sm font-bold transition-all relative z-[70] hover:-translate-y-0.5 ${
-                      active ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600'
-                    }`}
-                  >
-                    {item.name}
-                    {active && (
-                      <motion.div
-                        layoutId="nav-underline"
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-indigo-600 rounded-full mx-4"
-                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                      />
-                    )}
-                  </Link>
-                );
-              })}
+            <div className="flex items-center gap-6 px-6 py-2 bg-white/50 rounded-2xl border border-white/20 shadow-3d-inner">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`inline-block px-2 py-1 text-sm font-bold transition-all relative z-[70] hover:-translate-y-0.5 ${
+                    isActive(item.path) ? 'text-indigo-600' : 'text-slate-500 hover:text-indigo-600'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
             
             {/* Language Toggle */}
@@ -122,47 +112,27 @@ const Header: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-slate-100 overflow-hidden shadow-2xl"
+            className="md:hidden bg-white border-t border-slate-100 overflow-hidden"
           >
-            <div className="px-6 py-8 flex flex-col gap-2">
-              {navItems.map((item, i) => {
-                const active = isActive(item.path);
-                return (
-                  <motion.div
-                    key={item.path}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.05 }}
-                  >
-                    <Link
-                      to={item.path}
-                      onClick={() => setIsOpen(false)}
-                      className={`flex items-center justify-between px-6 py-4 rounded-2xl font-bold transition-all ${
-                        active 
-                          ? 'bg-indigo-50 text-indigo-600 shadow-3d-inner' 
-                          : 'text-slate-500 hover:bg-slate-50'
-                      }`}
-                    >
-                      {item.name}
-                      {active && <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full" />}
-                    </Link>
-                  </motion.div>
-                );
-              })}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: navItems.length * 0.05 }}
-                className="mt-4"
-              >
-                <a
-                  href="tel:+916350489219"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-8 py-5 rounded-[24px] text-center font-black uppercase tracking-widest shadow-3d active:scale-[0.98] transition-all"
+            <div className="px-6 py-8 flex flex-col gap-6">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`text-lg font-bold ${
+                    isActive(item.path) ? 'text-indigo-600' : 'text-slate-500'
+                  }`}
                 >
-                  <Phone size={20} />
-                  {t('nav.callUs')}
-                </a>
-              </motion.div>
+                  {item.name}
+                </Link>
+              ))}
+              <a
+                href="tel:+916350489219"
+                className="bg-indigo-600 text-white px-8 py-4 rounded-[24px] text-center font-black uppercase tracking-widest shadow-xl shadow-indigo-100 active:scale-[0.98] transition-all"
+              >
+                {t('nav.callUs')}
+              </a>
             </div>
           </motion.div>
         )}
